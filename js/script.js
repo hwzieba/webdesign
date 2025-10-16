@@ -1,3 +1,3 @@
-//Person 1: Form Validation (e-mail format, required fields)
-//Person 2: jQuery Menu
-//Person 3: Image Gallery
+//Person X: Form Validation (e-mail format, required fields)
+//Person Y: jQuery Menu
+//Person Z: Image Gallery
