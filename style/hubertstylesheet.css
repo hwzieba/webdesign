@@ -4,14 +4,13 @@
 .about_container a {
     color:black;
 }
-@media (min-width: 1080px) {
+
 .about_container{
     display:flex;    
 }
-}
+
 .about_left_column{
     padding:20px;
-    width:500px;
     flex:1;
 }
 .about_right_column{
@@ -22,6 +21,8 @@
 .about_text{
     width:500px;
     max-width:100%;
+    margin:0px;
+    text-align: justify;
 }
 .about_photo{
 
