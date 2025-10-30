@@ -7,7 +7,6 @@
 
 .about_container{
     display:flex;
-
 }
 .about_left_column{
     padding:10px;
@@ -19,19 +18,22 @@
     
 }
 .about_text{
-    display: block;   
+
 }
 .about_photo{
-    display: block;
+
 }
 .about_photo img{
-    width:400px;
+    width:500px;
+    max-width:100%;
+    height: auto;
 }
 .slideshow{
 
 }
 .slides{
     display: none;
+    border-radius: 4px;
 
 }
 .fade {
