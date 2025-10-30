@@ -44,3 +44,18 @@ a:hover, a:active{
 .currentPage{
     color: #8F2F09;
 }
+
+@media(min-width:700px){
+  .flexbox{
+    display: flex;
+    margin: 10px;
+justify-content: space-evenly;
+  }
+}
+
+@media(max-width:699px){
+  .flexbox {
+    display: flex;
+	  flex-wrap: wrap;
+  }
+}
