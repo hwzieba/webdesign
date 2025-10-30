@@ -1,2 +1,58 @@
 /*Stylesheet created by Hubert Zieba*/
 @import url("style.css");
+
+.about_container a {
+    color:black;
+}
+
+.about_container{
+    display:flex;
+
+}
+.about_left_column{
+    padding:10px;
+    flex:1;
+}
+.about_right_column{
+    padding:10px;
+    flex:1;
+    
+}
+.about_text{
+    display: block;   
+}
+.about_photo{
+    display: block;
+}
+.about_photo img{
+    width:400px;
+}
+.slideshow{
+
+}
+.slides{
+    display: none;
+
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#about_kitchen_img{
+    display: block;
+}
+#about_kitchen_text{
+    display: block;
+}
+#about_me_img{
+    display: hidden;
+}
+#about_me_text{
+    display: hidden;
+}

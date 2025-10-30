@@ -6,6 +6,23 @@ Page created by Hubert Zieba
   <head>
     <title>about page</title>
     <link rel="stylesheet" href="style/hubertstylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#about_me_link").click(function(){
+        $("#about_me_img").css("display", "block");
+        $("#about_me_text").css("display", "block");
+        $("#about_kitchen_img").css("display", "hidden");
+        $("#about_kitchen_text").css("display", "hidden");        
+      });
+      $("#about_kitchen_link").click(function(){
+        $("#about_kitchen_img").css("display", "block");
+        $("#about_kitchen_text").css("display", "block");
+        $("#about_me_img").css("display", "hidden");
+        $("#about_me_text").css("display", "hidden");
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="navigation">
@@ -13,18 +30,74 @@ Page created by Hubert Zieba
         <img src="./images/logo.jpg" alt="Gooseberry Kitchen" height="100px"/>
       </a> <a href="index.html">main</a> | <a href="" class="currentPage">about</a> | <a href="menu.html">menu</a> | <a href="contact.html">contact</a>
     </div>
-    <h1>
-      about
-    </h1>
-    <p>
-      About Gooseberry Kitchen
-    </p>
-    <p>
-      Gooseberry Kitchen is a small but mighty home-run catering business built on the belief that everyone deserves the comfort of a home-cooked meal, even when life gets busy. We create nourishing, seasonal dishes made from scratch — the kind of food that fills your kitchen with warmth and your table with joy. Our menu celebrates classic Irish meat and produce, European classics with thoughtful twists inspired by cuisines from around the world. Whether you're a new parent, a shift worker, or simply juggling the daily rush, Gooseberry Kitchen brings wholesome, comforting meals straight from our kitchen to yours. Sustainability, seasonality, and a love of good food are at the heart of everything we do.
-    </p>
-    <p>About me</p>
-    <p>
-      My name is Sarah. I'm a self-taught home cook with a lifelong passion for feeding people and bringing them together through food. Originally from Waterford and based in Dublin, cooking has always been central to my life. From family gatherings that revolved around the table, to quiet Sunday afternoons spent filling the fridge with homemade staples, I find a way to bring the joy and gift of food into everything I do. During COVID, I found myself cooking daily for family who had moved back home, and my love for creating comforting meals deepened into something more purposeful. When my sister-in-law had her baby, the only thing I wanted to give her was food made with care and love — enough to ease those first few chaotic weeks. I believe food is a gift — one that nourishes, connects, and comforts. That's the spirit behind Gooseberry Kitchen: real food for real life, made with heart.
-    </p>    
+    <div class="about_container">
+      <div class="about_left_column">
+        <h1>
+          <a id="about_kitchen_link" href="">about Gooseberry Kitchen</a>
+        </h1>
+        <div class="about_text" id="about_kitchen_text">
+          <p>
+            Gooseberry Kitchen is a small but mighty home-run catering business built on the belief that everyone deserves the comfort of a home-cooked meal, even when life gets busy. We create nourishing, seasonal dishes made from scratch — the kind of food that fills your kitchen with warmth and your table with joy. Our menu celebrates classic Irish meat and produce, European classics with thoughtful twists inspired by cuisines from around the world. Whether you're a new parent, a shift worker, or simply juggling the daily rush, Gooseberry Kitchen brings wholesome, comforting meals straight from our kitchen to yours. Sustainability, seasonality, and a love of good food are at the heart of everything we do.
+          </p>
+        </div>
+        <div class="about_photo" id="about_me_img">
+          <img src="images/about09.jpg">
+        </div>
+      </div>
+      <div class="about_right_column">
+        <h1>
+          <a id="about_me_link" href="">about me</a>
+        </h1>
+        <div class="about_text" id="about_me_text">
+          <p>
+            My name is Sarah. I'm a self-taught home cook with a lifelong passion for feeding people and bringing them together through food. Originally from Waterford and based in Dublin, cooking has always been central to my life. From family gatherings that revolved around the table, to quiet Sunday afternoons spent filling the fridge with homemade staples, I find a way to bring the joy and gift of food into everything I do. During COVID, I found myself cooking daily for family who had moved back home, and my love for creating comforting meals deepened into something more purposeful. When my sister-in-law had her baby, the only thing I wanted to give her was food made with care and love — enough to ease those first few chaotic weeks. I believe food is a gift — one that nourishes, connects, and comforts. That's the spirit behind Gooseberry Kitchen: real food for real life, made with heart.
+          </p> 
+        </div>
+        <div class="about_photo" id="about_kitchen_img">
+          <div class="slideshow">
+            <div class="slides fade">
+              <img src="images/about01.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about02.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about03.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about04.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about05.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about06.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about07.jpg">
+            </div>
+            <div class="slides fade">
+              <img src="images/about08.jpg">
+            </div>                                                                                    
+          </div>    
+        </div> 
+      </div>
+    </div>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+     </script>
   </body>
 </html>
