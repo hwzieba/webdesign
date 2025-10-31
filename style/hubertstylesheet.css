@@ -1,6 +1,11 @@
 /*Stylesheet created by Hubert Zieba*/
 @import url("style.css");
-
+body {
+    font-family: Garamond !important;
+}
+h1 {
+    font-size: 24px;
+}
 .about_container a {
     color:black;
 }
@@ -10,53 +15,49 @@
 }
 
 .about_left_column{
-    padding:20px;
+    padding-top:20px;
     flex:1;
 }
 .about_right_column{
-    padding:20px;
+    padding-top:20px;
     flex:1;
     
 }
 .about_text{
-    width:500px;
-    max-width:100%;
+    width:400px;
+    height:400px;
     margin:0px;
     text-align: justify;
+    padding:50px;
 }
 .about_photo{
+    width:500px;
+    height:500px;
 
 }
 .about_photo img{
-    width:500px;
-    max-width:100%;
-    height: auto;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
-.slideshow{
 
-}
 .slides{
     display: none;
+    width:500px;
+    height:500px;
+
+}
+.slides img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 .fade {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 4000ms;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .1} 
   to {opacity: 1}
-}
-
-#about_kitchen_img{
-    display: block;
-}
-#about_kitchen_text{
-    display: block;
-}
-#about_me_img{
-    display: hidden;
-}
-#about_me_text{
-    display: hidden;
 }
