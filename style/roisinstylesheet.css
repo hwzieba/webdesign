@@ -1,0 +1,61 @@
+@import url("style.css");
+
+.fab, .fas {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 45%;
+}
+
+
+.fab:hover, .fas:hover {
+    opacity: 0.7;
+    text-decoration: none !important;
+}
+
+.fa-instagram {
+  background: #8F2F09;
+  color: #d1c9c9;
+}
+
+.fa-tiktok {
+  background: #8F2F09;
+  color: #d1c9c9;
+}
+
+.email-icon {
+    background: #8F2F09;
+    color: #d1c9c9;
+    transition: color 0.3s ease;
+}
+a {
+    text-decoration: none;
+    color: #d1c9c9;
+}
+
+a:hover, a:active{
+    text-decoration: overline underline;
+}
+.navigation{
+  background-color: #c6693D;
+  color: white;
+}
+.currentPage{
+    color: #8F2F09;
+}
+
+@media(min-width:700px){
+  .flexbox{
+    display: flex;
+    margin: 10px;
+justify-content: space-evenly;
+  }
+}
+
+@media(max-width:699px){
+  .flexbox {
+    display: flex;
+	  flex-wrap: wrap;
+  }
+}
