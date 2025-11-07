@@ -1,5 +1,26 @@
-/*Person 1: Base Styles*/
+/*Collab: Base Styles and Menu*/
+body {
+    background-color: #d1c9c9;
+    /*Web safe fonts https://www.w3schools.com/csSref/css_websafe_fonts.php */
+    font-family: cursive, Arial;
+}
+.navigation{
+  background-color: #c6693D;
+  color: white;
+}
+.currentPage{
+    color: #8F2F09;
+}
+a {
+    text-decoration: none;
+    color: #d1c9c9;
+}
 
-/*Person B: Menu*/
+a:hover, a:active{
+    text-decoration: overline underline;
+}
 
-/*Person C: Responsive*/
+
+/*Person 2: Menu*/
+
+/*Person 3: Responsive*/
