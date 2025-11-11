@@ -16,12 +16,10 @@ a:hover{
   flex-wrap: wrap;
   background-color: #C68A68;
   min-height: 100vh;
-  margin:0 auto;
 }
 
 .navi {
-  flex: 1 1 50%;
-  max-width: 500px;
+  flex: 0 0 500px;
   text-align: center;
   background-color: #C68A68;
   padding-bottom: 50px;
