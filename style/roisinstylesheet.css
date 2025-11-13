@@ -49,7 +49,10 @@ a:hover, a:active{
   .flexbox{
     display: flex;
     margin: 10px;
-justify-content: space-evenly;
+  }
+    .flexbox{
+    display: flex;
+    margin: 10px;
   }
 }
 
@@ -58,4 +61,12 @@ justify-content: space-evenly;
     display: flex;
 	  flex-wrap: wrap;
   }
+}
+
+.sidecontacts{
+  background-color: white;
+  flex: 1;
+}
+.contactForm{
+  flex: 3;
 }
