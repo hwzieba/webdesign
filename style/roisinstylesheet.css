@@ -1,5 +1,7 @@
 @import url("style.css");
-
+/*reference for modals- https://codeconvey.com/snippet/bootstrap-5-modal-popup-tutorial-creating-success--error-messages-iPAdWOpr*/
+/*reference for Bootstrap - https://getbootstrap.com/docs/5.3/ */
+/*reference for other css - https://www.w3schools.com/csSref/index.php */
 .fab, .fas {
   padding: 20px;
   font-size: 30px;
@@ -12,6 +14,7 @@
 .fab:hover, .fas:hover {
     opacity: 0.7;
     text-decoration: none !important;
+	color:#d1c9c9 !important;
 }
 
 .fa-instagram {
@@ -32,17 +35,6 @@
 a {
     text-decoration: none;
     color: #d1c9c9;
-}
-
-a:hover, a:active{
-    text-decoration: overline underline;
-}
-.navigation{
-  background-color: #c6693D;
-  color: white;
-}
-.currentPage{
-    color: #8F2F09;
 }
 
 @media(min-width:700px){
@@ -70,3 +62,136 @@ a:hover, a:active{
 .contactForm{
   flex: 3;
 }
+h2{
+	text-align: center;
+	margin-bottom: 15px;
+}
+label{
+	display: block;
+	margin-top: 15px;
+}
+.formContainer{
+	background-color: white;
+	border-radius: 15px;
+	padding: 40px;
+	box-shadow: 0 0 5px black;
+}
+.inVisibleDisplay{
+	display: none;
+}
+input{
+	border-radius: 8px;
+	width:20vw;
+	padding: 10px;
+	margin-top: 4px;
+	margin-right: 15px;
+	border: 1px solid #ccc;
+}
+button{
+	margin-top:15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:white;
+	border:none;
+	border-radius: 8px;
+	cursor:pointer;	
+}
+.btn{
+	background-color: #8F2F09;
+	border:none;
+}
+.btn-primary:hover{
+	background-color: #8F2F09;
+	opacity: 0.7;
+}
+
+
+.modal#feedbackModal .modal-content {
+	border-radius: 30px;
+}
+
+.modal#feedbackModal .modal-content svg {
+	width: 100px; 
+	display: block; 
+	margin: 0 auto;
+	justify-content: center;
+}
+ 
+.modal#feedbackModal .modal-content .path {
+	stroke-dasharray: 1000; 
+	stroke-dashoffset: 0;
+}
+
+.modal#feedbackModal .modal-content .path.circle {
+	-webkit-animation: dash 0.9s ease-in-out; 
+	animation: dash 0.9s ease-in-out;
+}
+ 
+.modal#feedbackModal .modal-content .path.line {
+	stroke-dashoffset: 1000; 
+	-webkit-animation: dash 0.95s 0.35s ease-in-out forwards; 
+	animation: dash 0.95s 0.35s ease-in-out forwards;
+}
+
+.modal#feedbackModal .modal-content .path.check {
+	stroke-dashoffset: -100; 
+	-webkit-animation: dash-check 0.95s 0.35s ease-in-out forwards; 
+	animation: dash-check 0.95s 0.35s ease-in-out forwards;
+}
+
+@-webkit-keyframes dash { 
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes dash { 
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100%{
+		stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes dash { 
+	0% {
+		stroke-dashoffset: 1000;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes dash { 
+	0% {
+		stroke-dashoffset: 1000;}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes dash-check { 
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+@keyframes dash-check {
+	0% {
+		stroke-dashoffset: -100;
+	}
+	100% {
+		stroke-dashoffset: 900;
+	}
+}
+.box00{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+
+
+
