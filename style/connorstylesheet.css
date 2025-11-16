@@ -77,14 +77,25 @@
 
 /* media for mobile devices */
 @media (max-width: 900px) {
+
+    /* Collapse layout */
     .content {
         grid-template-columns: 1fr;
     }
 
+    /* Fix logo */
+    .navi img {
+        width: 80%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    /* Fix right panel spacing */
     .main {
         padding: 40px 20px;
     }
 
+    /* Stack menu items */
     .menu-items {
         flex-direction: column;
         align-items: flex-start;
@@ -92,5 +103,6 @@
 
     .menu-items span:last-child {
         margin-top: 5px;
+        text-align: left;
     }
 }
