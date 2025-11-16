@@ -1,5 +1,5 @@
 /* Stylesheet created by Connor Vogelaar */
-/* layout for menu page*/
+/* Layout for menu page */
 .content {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
@@ -9,6 +9,7 @@
     background-color: #c68a68;
 }
 
+/* Left navigation panel */
 .navi {
     background-color: #c68a68;
     text-align: center;
@@ -19,7 +20,7 @@
     width: 500px;
 }
 
-/* Right-hand panel */
+/* Right panel */
 .main {
     background-color: #d1c9c9;
     padding: 80px 100px;
@@ -28,25 +29,26 @@
     text-align: left;
 }
 
-/* pages heading */
+/* Page heading */
 .page-heading {
     font-size: 32px;
     margin-bottom: 20px;
     color: #8F2F09;
 }
 
-/* intro list */
+/* Intro list */
 .main ul {
     font-size: 16px;
     margin-bottom: 30px;
 }
 
-/* menu sections */
+/* Menu sections */
 .menu-section {
     margin-bottom: 45px;
     padding-bottom: 10px;
 }
 
+/* Section headers */
 .item-heading {
     font-size: 22px;
     margin-bottom: 10px;
@@ -55,7 +57,7 @@
     padding-bottom: 5px;
 }
 
-/* menu rows styling */
+/* Menu items */
 .menu-items {
     display: flex;
     justify-content: space-between;
@@ -75,27 +77,27 @@
     min-width: 80px;
 }
 
-/* media for mobile devices */
+/* mobile layout */
 @media (max-width: 900px) {
 
-    /* Collapse layout */
+    /* stack columns */
     .content {
-        grid-template-columns: 1fr;
+        display: block;
     }
 
-    /* Fix logo */
+    /* smaller logo */
     .navi img {
-        width: 80%;
-        max-width: 300px;
+        width: 70%;
+        max-width: 260px;
         margin: 20px auto;
     }
 
-    /* Fix right panel spacing */
+    /* reduce padding */
     .main {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
 
-    /* Stack menu items */
+    /* stack items */
     .menu-items {
         flex-direction: column;
         align-items: flex-start;
