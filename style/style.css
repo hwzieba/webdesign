@@ -45,7 +45,8 @@ a:hover{
 }
 
 .main img{
-    padding-top:50px;
+    margin-top:50px;
+    border-radius: 12px;
     width:100%;
 }
 

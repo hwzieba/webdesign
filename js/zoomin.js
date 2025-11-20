@@ -1,16 +1,16 @@
-function zoomin(imageid){
-    var modal = document.getElementById("zoomin");
+function zoomin(imageid) {
+  //Finding elements on page
+  var modal = document.getElementById("zoomin");
+  var img = document.getElementById(imageid);
+  var modalImg = document.getElementById("img");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById(imageid);
-    var modalImg = document.getElementById("img");
-    img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    }
+  //Displaying the modal
+  modal.style.display = "block";
+  modal.style.padding = "10px";
+  modalImg.src = img.src;
 
-    // When the user clicks on <span> (x), close the modal
-    modal.onclick = function() {
+  //Closing the modal
+  modal.onclick = function() {
     modal.style.display = "none";
-    }
+  }
 }

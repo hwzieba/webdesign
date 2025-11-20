@@ -1,15 +1,19 @@
 /*Stylesheet created by Hubert Zieba*/
 @import url("style.css");
-
+.page-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #8F2F09;
+}
 .slides{
     display: none;
-    border-radius: 6px;
+    overflow: hidden;
     transition: 0.3s;
     cursor: pointer;
 }
 .fade {
   animation-name: fade;
-  animation-duration: 2000ms;
+  animation-duration: 500ms;
 }
 
 @keyframes fade {
