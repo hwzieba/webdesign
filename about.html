@@ -1,28 +1,45 @@
 <!--
 Page created by Hubert Zieba
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>gooseberry kitchen - the kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gooseberry Kitchen - About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--Adding Bootstrap Icons -->
     <link rel="stylesheet" href="style/hubertstylesheet.css">
-    </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </head>
   <body>
-    <div class="content">
-      <div class="navi">
-        <img src="images/logo500x500_lite.png"><br>
-        <a href="index.html">the kitchen</a> &#x1F37D; <a href="" class="currentPage">about me</a> &#x1F37D; <a href="menu.html">menu</a> &#x1F37D; <a href="contact.html">contact</a>
-      </div>
-      <div class="main">
-        <h1 class="page-heading">About Me</h1>
-        <p>
-          My name is Sarah. I'm a self-taught home cook with a lifelong passion for feeding people and bringing them together through food. Originally from Waterford and based in Dublin, cooking has always been central to my life. From family gatherings that revolved around the table, to quiet Sunday afternoons spent filling the fridge with homemade staples, I find a way to bring the joy and gift of food into everything I do. During COVID, I found myself cooking daily for family who had moved back home, and my love for creating comforting meals deepened into something more purposeful. When my sister-in-law had her baby, the only thing I wanted to give her was food made with care and love — enough to ease those first few chaotic weeks. I believe food is a gift — one that nourishes, connects, and comforts. That's the spirit behind Gooseberry Kitchen: real food for real life, made with heart.
-        </p>
-        <img src="images/about09.jpg">
-        <div class="footer">
-          &#169; 2025 Roisin Kelly, Connor Vogelaar, Hubert Zieba 
+    <div class="container-fluid">
+    <div class="row">
+      <div class="d-none d-xl-block left-col col-xl-2"></div>
+      <div class="col-12 col-xl-4 left-col d-flex flex-column align-items-center p-3">
+        <div class="logo mb-3">
+          <a href="index.html"><img src="images/logo500x500_lite.png" class="img-fluid logo"></a>
         </div>
-      </div>         
+        <nav class="menu">
+          <ul class="nav flex-xl-column flex-sm-row justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill"></i> The Kitchen</a></li>
+            <li class="nav-item"><a class="nav-link currentPage" href="about.html"><i class="bi bi-person-fill"></i> About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html"><span class="bi bi-book-fill"></span> Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-12 col-xl-4 right-col p-3">
+        <div class="content">
+          <h1>About Me</h1>
+          <p>My name is Sarah. I'm a self-taught home cook with a lifelong passion for feeding people and bringing them together through food. Originally from Waterford and based in Dublin, cooking has always been central to my life. From family gatherings that revolved around the table, to quiet Sunday afternoons spent filling the fridge with homemade staples, I find a way to bring the joy and gift of food into everything I do. During COVID, I found myself cooking daily for family who had moved back home, and my love for creating comforting meals deepened into something more purposeful. When my sister-in-law had her baby, the only thing I wanted to give her was food made with care and love — enough to ease those first few chaotic weeks. I believe food is a gift — one that nourishes, connects, and comforts. That's the spirit behind Gooseberry Kitchen: real food for real life, made with heart.</p>
+          <img src="images/about09.jpg" width="100%">
+        </div>
+        <div class="footer">
+          <p>&#169; 2025 Roisin Kelly, Connor Vogelaar, Hubert Zieba</p>
+        </div>
+      </div>
+      <div class="d-none d-xl-block right-col col-xl-2"></div>
     </div>
+  </div>
   </body>
 </html>

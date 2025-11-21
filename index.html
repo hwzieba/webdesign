@@ -1,23 +1,41 @@
 <!--
 Page created by Hubert Zieba
 -->
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>gooseberry kitchen - about me</title>
-    <link rel="stylesheet" href="style/hubertstylesheet.css">
-    </head>
-  <body>
-    <div class="content">
-      <div class="navi">
-        <a href="index.html"><img src="images/logo500x500_lite.png"></a><br>
-        <a href="" class="currentPage">the kitchen</a> &#x1F37D; <a href="about.html">about me</a> &#x1F37D; <a href="menu.html">menu</a> &#x1F37D; <a href="contact.html">contact</a>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gooseberry Kitchen - The Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--Bootstrap Icons - References: https://icons.getbootstrap.com/#install-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/hubertstylesheet.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-xl-block left-col col-xl-2"></div>
+    <div class="col-12 col-xl-4 left-col d-flex flex-column align-items-center p-3">
+      <div class="logo mb-3">
+        <a href="index.html"><img src="images/logo500x500_lite.png" class="img-fluid logo"></a>
       </div>
-      <div class="main">
-        <h1 class="page-heading">The Kitchen</h1>
-        <p class="text">
+      <nav class="menu">
+        <ul class="nav flex-xl-column flex-sm-row justify-content-center">
+          <li class="nav-item"><a class="nav-link currentPage" href="index.html"><i class="bi bi-house-fill"></i> The Kitchen</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-person-fill"></i> About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html"><span class="bi bi-book-fill"></span> Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-12 col-xl-4 right-col p-3">
+      <div class="content">
+        <h1>The Kitchen</h1>
+        <p>
           Gooseberry Kitchen is a small but mighty home-run catering business built on the belief that everyone deserves the comfort of a home-cooked meal, even when life gets busy. We create nourishing, seasonal dishes made from scratch — the kind of food that fills your kitchen with warmth and your table with joy. Our menu celebrates classic Irish meat and produce, European classics with thoughtful twists inspired by cuisines from around the world. Whether you're a new parent, a shift worker, or simply juggling the daily rush, Gooseberry Kitchen brings wholesome, comforting meals straight from our kitchen to yours. Sustainability, seasonality, and a love of good food are at the heart of everything we do.
         </p>
+        <!--Slideshow - References: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
         <div class="slides fade">
           <img id="img01" onclick="zoomin(id)" src="images/IMG_0034.jpg">
         </div>
@@ -44,17 +62,22 @@ Page created by Hubert Zieba
         </div>
         <div class="slides fade">
           <img id="img09" onclick="zoomin(id)" src="images/IMG_9773.jpg">
-        </div>        
-        <div class="footer">
-          &#169; 2025 Roisin Kelly, Connor Vogelaar, Hubert Zieba                                                                          
-        </div>  
+        </div> 
+      </div>
+      <div class="footer">
+        <p>&#169; 2025 Roisin Kelly, Connor Vogelaar, Hubert Zieba</p>
       </div>
     </div>
-    <div id="zoomin" class="modal">
-      <img class="modal-content" id="img">
-      <div id="caption"></div>
-    </div>
-    <script src="js/slideshow.js"></script>
-    <script src="js/zoomin.js"></script>
-  </body>
+    <div class="d-none d-xl-block right-col col-xl-2"></div>
+  </div>
+</div>
+<!--Modal - References: https://www.w3schools.com/howto/howto_css_modal_images.asp-->
+<div id="zoomin" class="modal">
+  <img class="modal-content" id="img">
+  <div id="caption"></div>
+</div>
+<script src="js/slideshow.js"></script>
+<script src="js/zoomin.js"></script>
+</body>
 </html>
+

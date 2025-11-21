@@ -1,5 +1,7 @@
 /* Stylesheet created by Connor Vogelaar */
-/* Layout for menu page */
+/*
+Commenting this section out to enable new layout
+Layout for menu page 
 .content {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
@@ -9,7 +11,7 @@
     background-color: #c68a68;
 }
 
-/* Left navigation panel */
+/* Left navigation panel 
 .navi {
     background-color: #c68a68;
     text-align: center;
@@ -20,7 +22,7 @@
     width: 500px;
 }
 
-/* Right panel */
+/* Right panel 
 .main {
     background-color: #d1c9c9;
     padding: 80px 100px;
@@ -62,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px dashed #67411044;
 }
 
