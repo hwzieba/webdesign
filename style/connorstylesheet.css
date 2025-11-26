@@ -1,7 +1,6 @@
 /* Stylesheet created by Connor Vogelaar */
-/*
-Commenting this section out to enable new layout
-Layout for menu page 
+
+/* Layout for menu page 
 .content {
     display: grid;
     grid-template-columns: 500px minmax(0, 1fr);
@@ -30,6 +29,13 @@ Layout for menu page
     line-height: 1.6;
     text-align: left;
 }
+*/
+
+.content {
+    background-color: #d1c9c9;
+    padding: 20px;
+    border-radius: 6px;
+}
 
 /* Page heading */
 .page-heading {
@@ -57,7 +63,7 @@ Layout for menu page
 
 /* soups start open */
 .menu-section.open .menu-items {
-    display: flex;
+    display: flex !important;
 }
 
 /* Section headers */
@@ -67,6 +73,12 @@ Layout for menu page
     color: #674110;
     border-bottom: 2px solid #c68a68;
     padding-bottom: 5px;
+    cursor: pointer;
+
+    /* keeps + / - perfectly aligned */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Menu items */
@@ -94,7 +106,7 @@ Layout for menu page
 
     /* stack columns */
     .content {
-        display: block;
+        padding: 20px;
     }
 
     /* smaller logo */
@@ -106,7 +118,7 @@ Layout for menu page
 
     /* reduce padding */
     .main {
-        padding: 30px 20px;
+        padding: 20px 10px;
     }
 
     /* stack items */
@@ -120,3 +132,4 @@ Layout for menu page
         text-align: left;
     }
 }
+
