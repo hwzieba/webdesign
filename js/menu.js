@@ -1,4 +1,4 @@
-/* page by Connor vogelaar */
+// page by Connor Vogelaar 
 
 const headings = document.querySelectorAll(".item-heading");
 
