@@ -35,6 +35,7 @@ contactFormEvent.addEventListener("submit", function(event) {
 	formTitle.innerHTML = "Thank You";
 	errorModal.classList.add("inVisibleDisplay");
 	contactForm.classList.add("inVisibleDisplay");
+	formTitle.classList.remove("inVisibleDisplay");
 	contactMessage.innerHTML = "&nbsp;";
 	successModal.classList.remove("inVisibleDisplay");
 	return;
