@@ -1,7 +1,8 @@
 @import url("style.css");
 /*reference for modals- https://codeconvey.com/snippet/bootstrap-5-modal-popup-tutorial-creating-success--error-messages-iPAdWOpr*/
 /*reference for Bootstrap - https://getbootstrap.com/docs/5.3/ */
-/*reference for other css - https://www.w3schools.com/csSref/index.php */
+/*reference for other css - https://www.w3schools.com/csSref/index.php 
+reference for placeholders https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::placeholder*/
 .fab, .fas {
   padding: 20px;
   font-size: 30px;
@@ -9,8 +10,6 @@
   text-decoration: none;
   border-radius: 45%;
 }
-
-
 .fab:hover, .fas:hover {
     opacity: 0.7;
     text-decoration: none !important;
@@ -32,51 +31,16 @@
     color: #d1c9c9;
     transition: color 0.3s ease;
 }
-a {
-    text-decoration: none;
-    color: #d1c9c9;
-}
 
-@media(min-width:700px){
-  .flexbox{
-    display: flex;
-    margin: 10px;
-  }
-    .flexbox{
-    display: flex;
-    margin: 10px;
-  }
-}
-
-@media(max-width:699px){
-  .flexbox {
-    display: flex;
-	  flex-wrap: wrap;
-  }
-}
-
-.sidecontacts{
-  background-color: white;
-  flex: 1;
-}
-.contactForm{
-  flex: 3;
-}
-
-h2{
-	text-align: center;
-	margin-bottom: 15px;
-}
 label{
 	display: block;
 	margin-top: 15px;
+	color: #8F2F09;
 }
 .formContainer{
 	background-color: #C68A68;
 	border-radius: 12px;
 	padding: 20px;
-	/*color: #d1c9c9 !important;*/
-	/*box-shadow: 0 0 5px black;*/
 }
 .inVisibleDisplay{
 	display: none;
@@ -87,7 +51,11 @@ input{
 	margin-top: 4px;
 	background-color: #d1c9c9 !important;
 	border: 0px !important;
-	color:#674110 !important;
+	color:#8F2F09 !important;
+}
+input::placeholder {
+  color: #C68A68 !important; 
+  opacity: 1; 
 }
 button{
 	margin-top:15px;
@@ -103,12 +71,24 @@ button{
 	color:#d1c9c9 !important;
 	border:none;
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn:active{
 	background-color: #8F2F09;
 	opacity: 0.7;
 }
-
-
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+	background-color: #8F2F09;
+	opacity: 0.7;
+}
+.modal-dialog{
+	width:300px;
+}
+#emailHelp{
+	color: #8F2F09;
+}
+.form-control:focus{
+	box-shadow: 0 0 0 .2rem #8F2F09;
+	opacity: 0.7
+}
 .modal#feedbackModal .modal-content {
 	border-radius: 12px;
 	background-color: #d1c9c9 !important;
@@ -119,8 +99,6 @@ button{
 	display: block; 
 	margin: 0 auto;
 	justify-content: center;
-	
-	
 }
  
 .modal#feedbackModal .modal-content .path {
