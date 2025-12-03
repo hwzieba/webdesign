@@ -11,9 +11,9 @@ contactFormEvent.addEventListener("submit", function(event) {
   let errorModal = document.getElementById("errorModal");
   let successModal = document.getElementById("successModal");
   if (name === "" ) {
-	  headerError.innerHTML = "Invalid name!";
-	  feedbackError.innerHTML="Please enter name!";
-	  successModal.classList.add("inVisibleDisplay");
+	headerError.innerHTML = "Invalid name!";
+	feedbackError.innerHTML="Please enter name!";
+	successModal.classList.add("inVisibleDisplay");
     return;
   }
   else if(isNaN(phone) || phone === ""){
@@ -29,16 +29,15 @@ contactFormEvent.addEventListener("submit", function(event) {
     return;
   }
   else{
-	  let feedbackSuccess = document.getElementById("feedbackModalBodySSuccess");
-	  feedbackSuccess.innerHTML= "Hi "+name+", thank you for your details. We will be in touch via "+phone+" shortly."
-	  let formTitle = document.getElementById("title");
-	 formTitle.innerHTML = "Thank You";
-	  errorModal.classList.add("inVisibleDisplay");
-	  contactForm.classList.add("inVisibleDisplay");
-	  contactMessage.innerHTML = "";
-	  successModal.classList.remove("inVisibleDisplay");
-	  return;
+	let feedbackSuccess = document.getElementById("feedbackModalBodySSuccess");
+	feedbackSuccess.innerHTML= "Hi "+name+", thank you for your details. We will be in touch via "+phone+" shortly."
+	let formTitle = document.getElementById("title");
+	formTitle.innerHTML = "Thank You";
+	errorModal.classList.add("inVisibleDisplay");
+	contactForm.classList.add("inVisibleDisplay");
+	contactMessage.innerHTML = "&nbsp;";
+	successModal.classList.remove("inVisibleDisplay");
+	return;
   }
-  
 });
 
